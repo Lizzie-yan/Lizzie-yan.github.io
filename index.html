@@ -177,7 +177,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h6 id="HTML验证工具："><a href="#HTML验证工具：" class="headerlink" title="HTML验证工具："></a>HTML验证工具：</h6><p><code>http://validator.w3.org</code></p>
+        <a id="more"></a>
+
+<h6 id="HTML验证工具："><a href="#HTML验证工具：" class="headerlink" title="HTML验证工具："></a>HTML验证工具：</h6><p><code>http://validator.w3.org</code></p>
 <h6 id="CSS验证工具："><a href="#CSS验证工具：" class="headerlink" title="CSS验证工具："></a>CSS验证工具：</h6><p><code>http://jigsaw.w3.org/css-validator/</code></p>
 <ul>
 <li>HTML和CSS是用来创建网页的语言。</li>
@@ -382,131 +384,6 @@
 
 
   
-    <article id="post-wiondos创建个人博客（hexo+github）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/29/wiondos%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo+github%EF%BC%89/">wiondos创建个人博客（hexo+github）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/29/wiondos%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo+github%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2019-10-29T07:23:21.636Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="在github上创建账号"><a href="#在github上创建账号" class="headerlink" title="在github上创建账号"></a>在github上创建账号</h3><h3 id="在github上新建一个仓库（repository）"><a href="#在github上新建一个仓库（repository）" class="headerlink" title="在github上新建一个仓库（repository）"></a>在github上新建一个仓库（repository）</h3><blockquote>
-<p>   用户部署个人博客github仓库的命名必须符合要求<br>    具体操作csdn上很多</p>
-</blockquote>
-<h3 id="SSH配置：进入Git-Bush-Here"><a href="#SSH配置：进入Git-Bush-Here" class="headerlink" title="SSH配置：进入Git Bush Here"></a>SSH配置：进入Git Bush Here</h3><blockquote>
-<p>  输入命令行：git config –global user.name “这里面是你github账号名称”<br>    输入命令行：git config –global user.email “这里面是你注册github时填的邮箱”</p>
-</blockquote>
-<h3 id="下载node-js"><a href="#下载node-js" class="headerlink" title="下载node.js"></a>下载node.js</h3><blockquote>
-<ol>
-<li>可以在cmd中用命令 node -v查看是否安装好<br> 安装完成后会有两个组件，node.js和npm</li>
-<li>在cmd中执行： npm inatall -g  cnpm –redistry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></li>
-<li>国内镜像源速度很慢，所以利用npm安装cnpm，然后利用cnpm安装        hexo博客框架<br> 用命令 cnpm -v 看cnpm是否安装好</li>
-<li>继续执行：cnpm install -g hexo-cli</li>
-<li>用cnpm安装hexo博客框架<br>可以用hexo -v来验证hexo是否安装好</li>
-</ol>
-</blockquote>
-<h3 id="创建一个文件夹blog：-mkdir-blog"><a href="#创建一个文件夹blog：-mkdir-blog" class="headerlink" title="创建一个文件夹blog： mkdir blog"></a>创建一个文件夹blog： mkdir blog</h3><blockquote>
-<p>   blog文件夹在cmd前面的路径下<br>    之后你的博客都将在这个文件夹内，所以写错的话，只要把这个文件夹干掉重来</p>
-</blockquote>
-<h3 id="进入blog：cd-blog"><a href="#进入blog：cd-blog" class="headerlink" title="进入blog：cd blog\"></a>进入blog：cd blog\</h3><blockquote>
-<p>   之后的步骤基本都是在blog内进行</p>
-</blockquote>
-<h3 id="初始化一个博客：hexo-init"><a href="#初始化一个博客：hexo-init" class="headerlink" title="初始化一个博客：hexo init"></a>初始化一个博客：hexo init</h3><blockquote>
-<p>  继续执行命令： dir<br>    dir：看blog文件下生成了哪些文件</p>
-</blockquote>
-<h3 id="启动博客：hexo-s"><a href="#启动博客：hexo-s" class="headerlink" title="启动博客：hexo s"></a>启动博客：hexo s</h3><blockquote>
-<p>   会给你生成一个网址，一般都是localhost：4000<br>    此时已经在本地创建了一个博客，地址是localhost：4000</p>
-</blockquote>
-<h3 id="新建一篇文章：hexo-new-“First”"><a href="#新建一篇文章：hexo-new-“First”" class="headerlink" title="新建一篇文章：hexo new “First”"></a>新建一篇文章：hexo new “First”</h3><blockquote>
-<p>   就会生成一篇名为 First 的文章<br>    并且会给你文章所在的目录</p>
-</blockquote>
-<h3 id="进入文章所在的目录：cd-source-posts"><a href="#进入文章所在的目录：cd-source-posts" class="headerlink" title="进入文章所在的目录：cd source/_posts/"></a>进入文章所在的目录：cd source/_posts/</h3><blockquote>
-<p>   根据文章所在的目录cd</p>
-</blockquote>
-<h3 id="打开文章-First-编辑内容：notepad-First-md"><a href="#打开文章-First-编辑内容：notepad-First-md" class="headerlink" title="打开文章 First 编辑内容：notepad First.md"></a>打开文章 First 编辑内容：notepad First.md</h3><blockquote>
-<p>   我是用notepad打开的文章，也可用VS code等文章打开</p>
-</blockquote>
-<h3 id="退回blog文件层："><a href="#退回blog文件层：" class="headerlink" title="退回blog文件层："></a>退回blog文件层：</h3><blockquote>
-<p> cd ../..</p>
-</blockquote>
-<h3 id="清理一下缓存文件："><a href="#清理一下缓存文件：" class="headerlink" title="清理一下缓存文件："></a>清理一下缓存文件：</h3><blockquote>
-<p>hexo clean</p>
-</blockquote>
-<h3 id="生成静态文件："><a href="#生成静态文件：" class="headerlink" title="生成静态文件："></a>生成静态文件：</h3><blockquote>
-<p> hexo g</p>
-</blockquote>
-<h3 id="重新启动博客：hexo-s"><a href="#重新启动博客：hexo-s" class="headerlink" title="重新启动博客：hexo s"></a>重新启动博客：hexo s</h3><blockquote>
-<p>   进入生成的网址（一般都是localhost：4000），你就能看到自己写的那篇博客了</p>
-</blockquote>
-<hr>
-<ul>
-<li>hexo博客的搭建已经完成，但只存在于本地，故需要部署到远端去，这里我们部署到GitHub上去 </li>
-</ul>
-<hr>
-<h3 id="在blog目录下装git部署插件："><a href="#在blog目录下装git部署插件：" class="headerlink" title="在blog目录下装git部署插件："></a>在blog目录下装git部署插件：</h3><blockquote>
-<p>  cnpm install –save  hexo-deployer-git<br>    用命令dir查看blog目录下的文件，有一个_congig.yml文件</p>
-</blockquote>
-<h3 id="打开-config-yml文件：notepad-config-yml"><a href="#打开-config-yml文件：notepad-config-yml" class="headerlink" title="打开_config.yml文件：notepad _config.yml"></a>打开_config.yml文件：notepad _config.yml</h3><blockquote>
-<p>文件最后有一个deployment配置，我们需要在那个地方做一些改变：<br>    deploy：<br>    type： git<br>    repo：     （这个地方写你刚刚创建仓库的地址）<br>    branch： master</p>
-<blockquote>
-<p>注意，这里的冒号后面一定要加空格！！！</p>
-</blockquote>
-</blockquote>
-<h3 id="部署到远端：hexo-d"><a href="#部署到远端：hexo-d" class="headerlink" title="部署到远端：hexo d"></a>部署到远端：hexo d</h3><p>   此时我们用仓库名在浏览器访问就可以访问到了 </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/29/wiondos%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo+github%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -675,11 +552,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML和CSS</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机网络</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机网络</a>
+                <a href="javascript:void(0)" class="js-tag color4">HTML和CSS</a>
               </li>
             
             <div class="clearfix"></div>
