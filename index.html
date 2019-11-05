@@ -157,6 +157,137 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Windows环境下搭建博客（hexo-github）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/05/Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-github%EF%BC%89/">Windows环境下搭建博客（hexo+github）</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/05/Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-github%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2019-11-05T01:54:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+         <a id="more"></a>
+
+<h6 id="在github上创建账号"><a href="#在github上创建账号" class="headerlink" title="在github上创建账号"></a>在github上创建账号</h6><h6 id="在github上新建一个仓库（repository）"><a href="#在github上新建一个仓库（repository）" class="headerlink" title="在github上新建一个仓库（repository）"></a>在github上新建一个仓库（repository）</h6><blockquote>
+<p>  用户部署个人博客github仓库的命名必须符合要求<br>    具体操作csdn上很多</p>
+</blockquote>
+<h6 id="SSH配置：进入Git-Bush-Here"><a href="#SSH配置：进入Git-Bush-Here" class="headerlink" title="SSH配置：进入Git Bush Here"></a>SSH配置：进入Git Bush Here</h6><blockquote>
+<p> 输入命令行：<code>git config --global user.name</code> “这里面是你github账号名称”<br>   输入命令行：<code>git config --global user.email</code>“这里面是你注册github时填的邮箱”</p>
+</blockquote>
+<h6 id="下载node-js"><a href="#下载node-js" class="headerlink" title="下载node.js"></a>下载node.js</h6><blockquote>
+<ol>
+<li>可以在cmd中用命令 <code>node -v</code>查看是否安装好<br> 安装完成后会有两个组件，node.js和npm</li>
+<li>在cmd中执行： <code>npm inatall -g  cnpm --redistry=https://registry.npm.taobao.org</code></li>
+<li>国内镜像源速度很慢，所以利用npm安装cnpm，然后利用cnpm安装        hexo博客框架<br> 用命令 <code>cnpm -v</code> 看cnpm是否安装好</li>
+<li>继续执行：<code>cnpm install -g hexo-cli</code></li>
+<li>用cnpm安装hexo博客框架<br> 可以用<code>hexo -v</code>来验证hexo是否安装好</li>
+</ol>
+</blockquote>
+<h6 id="创建一个文件夹blog：mkdir-blog"><a href="#创建一个文件夹blog：mkdir-blog" class="headerlink" title="创建一个文件夹blog：mkdir blog"></a>创建一个文件夹blog：<code>mkdir blog</code></h6><blockquote>
+<p>  blog文件夹在cmd前面的路径下<br>    之后你的博客都将在这个文件夹内，所以写错的话，只要把这个文件夹干掉重来</p>
+</blockquote>
+<h6 id="进入blog：cd-blog"><a href="#进入blog：cd-blog" class="headerlink" title="进入blog：cd blog\"></a>进入blog：<code>cd blog\</code></h6><blockquote>
+<p>  之后的步骤基本都是在blog内进行</p>
+</blockquote>
+<h6 id="初始化一个博客：hexo-init"><a href="#初始化一个博客：hexo-init" class="headerlink" title="初始化一个博客：hexo init"></a>初始化一个博客：<code>hexo init</code></h6><blockquote>
+<p>  继续执行命令： dir<br>    dir：看blog文件下生成了哪些文件</p>
+</blockquote>
+<h6 id="启动博客：hexo-s"><a href="#启动博客：hexo-s" class="headerlink" title="启动博客：hexo s"></a>启动博客：<code>hexo s</code></h6><blockquote>
+<p>  会给你生成一个网址，一般都是localhost：4000<br>    此时已经在本地创建了一个博客，地址是localhost：4000</p>
+</blockquote>
+<h6 id="新建一篇文章：hexo-new-quot-First-quot"><a href="#新建一篇文章：hexo-new-quot-First-quot" class="headerlink" title="新建一篇文章：hexo new &quot;First&quot;"></a>新建一篇文章：<code>hexo new &quot;First&quot;</code></h6><blockquote>
+<p>  就会生成一篇名为 First 的文章<br>    并且会给你文章所在的目录</p>
+</blockquote>
+<h6 id="进入文章所在的目录：cd-source-posts"><a href="#进入文章所在的目录：cd-source-posts" class="headerlink" title="进入文章所在的目录：cd source/_posts/"></a>进入文章所在的目录：<code>cd source/_posts/</code></h6><blockquote>
+<p>  根据文章所在的目录cd</p>
+</blockquote>
+<h6 id="打开文章-First-编辑内容：notepad-First-md"><a href="#打开文章-First-编辑内容：notepad-First-md" class="headerlink" title="打开文章 First 编辑内容：notepad First.md"></a>打开文章 First 编辑内容：<code>notepad First.md</code></h6><blockquote>
+<p>  我是用notepad打开的文章，也可用VS code等文章打开</p>
+</blockquote>
+<h6 id="退回blog文件层："><a href="#退回blog文件层：" class="headerlink" title="退回blog文件层："></a>退回blog文件层：</h6><blockquote>
+<p><code>cd ../..</code></p>
+</blockquote>
+<h6 id="清理一下缓存文件："><a href="#清理一下缓存文件：" class="headerlink" title="清理一下缓存文件："></a>清理一下缓存文件：</h6><blockquote>
+<p><code>hexo clean</code></p>
+</blockquote>
+<h6 id="生成静态文件："><a href="#生成静态文件：" class="headerlink" title="生成静态文件："></a>生成静态文件：</h6><blockquote>
+<p><code>hexo g</code></p>
+</blockquote>
+<h6 id="重新启动博客：hexo-s"><a href="#重新启动博客：hexo-s" class="headerlink" title="重新启动博客：hexo s"></a>重新启动博客：hexo s</h6><blockquote>
+<p>  进入生成的网址（一般都是localhost：4000），你就能看到自己写的那篇博客了</p>
+</blockquote>
+<hr>
+<h5 id="hexo博客的搭建已经完成，但只存在于本地，故需要部署到远端去，这里我们部署到GitHub上去"><a href="#hexo博客的搭建已经完成，但只存在于本地，故需要部署到远端去，这里我们部署到GitHub上去" class="headerlink" title="hexo博客的搭建已经完成，但只存在于本地，故需要部署到远端去，这里我们部署到GitHub上去"></a>hexo博客的搭建已经完成，但只存在于本地，故需要部署到远端去，这里我们部署到GitHub上去</h5><hr>
+<h6 id="在blog目录下装git部署插件："><a href="#在blog目录下装git部署插件：" class="headerlink" title="在blog目录下装git部署插件："></a>在blog目录下装git部署插件：</h6><blockquote>
+<p><code>cnpm install --save  hexo-deployer-git</code><br>    用命令dir查看blog目录下的文件，有一个_congig.yml文件</p>
+</blockquote>
+<h6 id="打开-config-yml文件：notepad-config-yml"><a href="#打开-config-yml文件：notepad-config-yml" class="headerlink" title="打开_config.yml文件：notepad _config.yml"></a>打开_config.yml文件：<code>notepad _config.yml</code></h6><blockquote>
+<p>文件最后有一个deployment配置，我们需要在那个地方做一些改变：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    deploy： </span><br><span class="line">    type： git</span><br><span class="line">    repo：   （这个地方写你刚刚创建仓库的地址）</span><br><span class="line">    branch： master</span><br></pre></td></tr></table></figure><br>注意，这里的冒号后面一定要加空格！！！</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/05/Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-github%EF%BC%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-HTML和CSS（1）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -552,11 +683,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">HTML和CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">计算机网络</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML和CSS</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
